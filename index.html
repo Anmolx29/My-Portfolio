@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anmol's Portfolio</title>
+
+    <!-- SEO & OpenGraph -->
+    <meta
+      name="description"
+      content="Anmol Emmanuel - Developer / Musician Portfolio"
+    />
+    <meta name="author" content="Anmol Emmanuel" />
+    <meta property="og:title" content="Anmol's Portfolio" />
+    <meta
+      property="og:description"
+      content="Developer / Musician crafting digital experiences."
+    />
+    <meta property="og:image" content="profile_picture.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- AOS (Optional Scroll Animations) -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- LANDING -->
+    <div class="overlay">
+      <div class="top-left">
+        <p class="pre-heading">HI I'M</p>
+        <h1 class="main-heading">ANMOL</h1>
+        <p class="sub-heading">
+          Blending code with creativity.<br />Software Developer | UI Enthusiast
+          | Problem Solver
+        </p>
+        <div class="yellow-line"></div>
+      </div>
+      <div class="top-right">
+        <div class="middle-container">
+          <p class="location">BASED IN<br /><span>DEHRADUN, INDIA</span></p>
+          <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="blog.html">BLOG</a>
+          </nav>
+        </div>
+      </div>
+      <div class="bottom-left">
+        <div class="bottom-box">
+          <p class="hire-text">
+            WANT TO<br />HIRE ME? <a href="#contact" id="contact-link">CONTACT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" data-aos="fade-up" class="about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi! I’m <strong>Anmol Emmanuel</strong>, a passionate Developer and
+            Musician based in Dehradun, India. I blend logic and creativity to
+            build elegant digital products and immersive musical experiences. My
+            approach is deeply rooted in simplicity, usability, and emotional
+            connection.
+          </p>
+          <p>
+            With strong foundations in web development, UI/UX design, and
+            full-stack architecture, I strive to create digital experiences that
+            not only work but also feel great to use. Outside of code, I compose
+            and produce music—bridging tech and art in every project.
+          </p>
+          <p>
+            When I’m not coding or composing, I love exploring new ideas in
+            design, AI, and creative problem-solving. Let's build something
+            amazing together!
+          </p>
+          <div class="resume-wrapper">
+            <a
+              href="assets/Anmol_Emmanuel_Resume.pdf"
+              download
+              class="resume-btn"
+              title="Download Resume"
+            >
+              <span>📄 Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Music Mood Player</h3>
+          <p>
+            AI-based music app that recommends songs based on your emotions.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Drag-and-drop responsive portfolio builder for devs and designers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form
+        action="https://formspree.io/f/xjkrlpjb"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <!-- SOCIAL LINKS IN CONTACT -->
+      <div class="contact-social">
+        <p>Find Me Online</p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/Anmolx29"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://instagram.com/__.anmolll.___"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/anmol-emmanuel-3445bb224"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
+    <footer class="page-footer">
+      <div class="footer-box">
+        <p>&copy; 2025 Anmol Emmanuel. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
